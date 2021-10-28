@@ -15,7 +15,7 @@ def build_repo_url() -> str:
     generate the urls for the api call
     '''
     if org is not None:
-        repos_path = f'orgs/{org}/repos'
+        repos_path = f'orgs/{org}/repos?type=public'
         slug = org
     elif user is not None:
         repos_path = f'users/{user}/repos'
