@@ -3,7 +3,7 @@ description: "This action exports vulnerabilities identified in GitHub Advanced 
 author: "Dan Shanahan (@leftrightleft)"
 inputs:
   token:
-    description: "PAT"
+    description: "Personal access token"
     required: true
   org:
     description: "GitHub organization.  Used to query the repos of an organization"
