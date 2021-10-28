@@ -1,0 +1,16 @@
+name: "GitHub Advanced Security CSV Export"
+description: "This action exports vulnerabilities identified in GitHub Advanced SECURITY (GHAS) to CSV format for data analytics"
+author: "Dan Shanahan (@leftrightleft)"
+inputs:
+  token:
+    description: "PAT"
+    required: true
+  org:
+    description: "GitHub organization.  Used to query the repos of an organization"
+    required: false
+  user:
+    description: "Username. Used to query the users repos"
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
